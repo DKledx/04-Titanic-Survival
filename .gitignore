@@ -1,0 +1,66 @@
+# 04-Titanic-Survival
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+titanic_env/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Data files
+data/raw/*.csv
+data/processed/*.csv
+data/processed/*.pkl
+*.csv
+*.pkl
+
+# Model files
+models/trained_models/*.pkl
+models/*.pkl
+
+# Submission files
+submissions/*.csv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
