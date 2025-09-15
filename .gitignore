@@ -35,10 +35,9 @@ titanic_env/
 .ipynb_checkpoints
 
 # Data files
-data/raw/*.csv
+# Note: train.csv and test.csv are now included in the repository
 data/processed/*.csv
 data/processed/*.pkl
-*.csv
 *.pkl
 
 # Model files

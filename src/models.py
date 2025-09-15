@@ -14,6 +14,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix, roc_auc_score
 from sklearn.preprocessing import StandardScaler
 import xgboost as xgb
+import lightgbm as lgb
 import joblib
 import os
 
@@ -37,7 +38,8 @@ class ModelTrainer:
             'KNN': KNeighborsClassifier(n_neighbors=5),
             'Naive Bayes': GaussianNB(),
             'Decision Tree': DecisionTreeClassifier(random_state=self.random_state),
-            'XGBoost': xgb.XGBClassifier(random_state=self.random_state, eval_metric='logloss')
+            'XGBoost': xgb.XGBClassifier(random_state=self.random_state, eval_metric='logloss'),
+            'LightGBM': lgb.LGBMClassifier(random_state=self.random_state, verbose=-1)
         }
         
     def train_models(self, X_train, y_train, X_test, y_test):
